@@ -63,10 +63,10 @@ $etudiants = [
 </head>
 <body>
 <div class="container">
-	<div class="row">
+	<div class="row mt-5">
 		<div class="col-lg-12 card">
-			<div class="card-header">
-				liste des produits
+			<div class="card-header mt-2">
+				<strong> liste des produits</strong>
 			</div>
 			<div class="card-body">
 				
@@ -82,15 +82,16 @@ $etudiants = [
 					</thead>
 					<tbody>
 						<?php foreach ($etudiants as $etudiant) {?>
-						<tr>
-						<td><?php echo $etudiant['numero']; ?></td>
-						<td><?php echo $etudiant['prenom']; ?></td>
-						<td><?php echo $etudiant['nom']; ?></td>
-						<td><?php echo $etudiant['adress']; ?></td>
+							<tr>
+								<td><?php echo $etudiant['numero']; ?></td>
+								<td><?php echo $etudiant['prenom']; ?></td>
+								<td><?php echo $etudiant['nom']; ?></td>
+								<td><?php echo $etudiant['adress']; ?></td>
 						
-					</tr>
-					<?php } ?>
+							</tr>
+						<?php } ?>
 					</tbody>
+					
 				</table>
 				
 			</div>
